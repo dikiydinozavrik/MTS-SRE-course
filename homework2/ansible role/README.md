@@ -1,14 +1,10 @@
-# PostgreSQL High-Availability Cluster :elephant: :sparkling_heart:
-
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-vitabaks.postgresql_cluster-success.svg)](https://galaxy.ansible.com/vitabaks/postgresql_cluster)
-[<img src="https://github.com/vitabaks/postgresql_cluster/workflows/Ansible-lint/badge.svg?branch=master">](https://github.com/vitabaks/postgresql_cluster/actions?query=workflow%3AAnsible-lint)
-[<img src="https://github.com/vitabaks/postgresql_cluster/workflows/Yamllint/badge.svg?branch=master">](https://github.com/vitabaks/postgresql_cluster/actions?query=workflow%3AYamllint)
-[<img src="https://github.com/vitabaks/postgresql_cluster/workflows/Flake8/badge.svg?branch=master">](https://github.com/vitabaks/postgresql_cluster/actions?query=workflow%3AFlake8)
-[<img src="https://github.com/vitabaks/postgresql_cluster/workflows/Molecule/badge.svg?branch=master">](https://github.com/vitabaks/postgresql_cluster/actions?query=workflow%3AMolecule)
-[![GitHub license](https://img.shields.io/github/license/vitabaks/postgresql_cluster)](https://github.com/vitabaks/postgresql_cluster/blob/master/LICENSE) 
-![GitHub stars](https://img.shields.io/github/stars/vitabaks/postgresql_cluster)
-
-### Deploy a Production Ready PostgreSQL High-Availability Cluster (based on "Patroni" and DCS "etcd" or "consul"). Automating with Ansible.
+# Развертывание и настройка окружения
+Необходимо:
+- Написать ansible playbook для развертывания postgresql в patroni сетапе
+- Развернуть etcd, patroni, postgres и единственный инстанс Haproxy
+- Написать helm chart для разворачивания api в выделенном неймспейсе
+### Архитектура приложения
+<img width="862" alt="image" src="https://github.com/dikiydinozavrik/MTS-SRE-course/assets/91958160/5c14f15a-87be-4867-bc7b-1f6e2d848488">
 
 This Ansible playbook is designed for deploying a PostgreSQL high availability cluster on dedicated physical servers for a production environment. The cluster can also be deployed on virtual machines and in the Cloud.
 
