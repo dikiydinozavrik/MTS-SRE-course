@@ -12,3 +12,11 @@ Project name: Marina.kireeva.2001
 ### Ansible role
 ### Helm chart
 
+### База данных
+Создана база weather, содержащая таблицы cities и forecast
+
+Скрипт создания находится в /Migrations/init.sql
+
+### Проверка работоспособности api:
+<img width="400" height="400" alt="image" src="https://github.com/dikiydinozavrik/MTS-SRE-course/assets/91958160/f173544a-20dd-4897-a320-cdb2f0311c3c">
+
