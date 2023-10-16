@@ -28,14 +28,11 @@ variables:
 ingress:
   enabled: true
   className: "nginx"
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: weather-app.example
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
+  - host: weather-app.example
+    paths:
+    - path: /
+      pathType: ImplementationSpecific
   tls: []
 
 resources:
